@@ -1,0 +1,8 @@
+<h2>Chat con genitore</h2>
+<div *ngIf="parentMessage">
+    <div *ngFor="let mes of parentMessage.split('; ')">
+        <p>{{mes}}</p>
+    </div>
+</div>
+<input type="text" [(ngModel)]="message" />
+<button (click)="sendMessage(message)">Invia al Padre</button>
