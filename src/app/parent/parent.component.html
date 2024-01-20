@@ -1,8 +1,9 @@
 <app-child [parentMessage]="message" (childEvent)="receiveMessage($event)"></app-child>
 <hr>
+<h1>Genitore</h1>
 <h2>Chat con figlio</h2>
 <div *ngFor="let mes of message.split('; ')">
     <p>{{mes}}</p>
 </div>
-<input type="text" [(ngModel)]="input" />
+<input type="text" [(ngModel)]="input" placeholder="Scrivi qui il messaggio... "/>
 <button (click)="sendMessage(input)">Invia al Figlio</button>
