@@ -2,6 +2,7 @@
 <hr>
 <h1>Genitore</h1>
 <h2>Chat con figlio</h2>
+<h2 *ngIf="counter%5==0 && counter!=0">Hai vinto!!!</h2>
 <div *ngFor="let mes of message.split('; ')">
     <p>{{mes}}</p>
 </div>

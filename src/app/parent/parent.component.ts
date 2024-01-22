@@ -19,9 +19,6 @@ export class ParentComponent {
   sendMessage(send_message: string){
     this.message+="Padre: "+send_message+"; ";
     this.counter++;
-    if (this.counter%5==0){
-      this.message+="Hai vinto!; "
-    }
     this.input=""
   }
 }
